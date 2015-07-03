@@ -1,4 +1,4 @@
-# JavaScript Hangul Utility
+# JavaScript Hangul Utility [![Build Status](https://travis-ci.org/stonexx/hangul.js.svg?branch=master)](https://travis-ci.org/stonexx/hangul.js)
 
 ## Example use
 
