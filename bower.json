@@ -1,0 +1,27 @@
+{
+  "name": "hangul.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stonexx/hangul.js",
+  "authors": [
+    "Seok Ki Won <seok.kiwon@gmail.com>"
+  ],
+  "description": "JavaScript Hangul Utility",
+  "main": "dist/hangul.js",
+  "keywords": [
+    "hangul"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "/Gulpfile.js",
+    "/webpack.config.js",
+    "/package.json",
+    "/README.md",
+    "/test",
+    "/support",
+    "/docs",
+    "/examples",
+    "/node_modules",
+    "/bower_components"
+  ]
+}
