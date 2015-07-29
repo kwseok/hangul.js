@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://github.com/stonexx/hangul.js",
   "authors": [
-    "Seok Ki Won <seok.kiwon@gmail.com>"
+    "Kiwon Seok"
   ],
   "description": "JavaScript Hangul Utility",
   "main": "dist/hangul.js",
