@@ -1,3 +1,5 @@
+'use strict';
+
 import isHangul from './isHangul'
 import initial from './initial'
 import vowel from './vowel'

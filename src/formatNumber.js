@@ -1,3 +1,5 @@
+'use strict';
+
 import NUMBERS from './vars/numbers'
 import LARGE_NUMBERS from './vars/largeNumbers'
 

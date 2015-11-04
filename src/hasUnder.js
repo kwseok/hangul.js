@@ -1,3 +1,5 @@
+'use strict';
+
 import isHangul from './isHangul'
 import under from './under'
 

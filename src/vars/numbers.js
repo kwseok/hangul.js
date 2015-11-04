@@ -1,3 +1,5 @@
+'use strict';
+
 export default [
     '영',
     '일',

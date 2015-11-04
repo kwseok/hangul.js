@@ -1,3 +1,5 @@
+'use strict';
+
 import isHangul from './isHangul'
 import INITIAL_CONSONANTS from './vars/initialConsonants'
 

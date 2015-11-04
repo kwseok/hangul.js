@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * @description 문자열이 한글인지 검사한다
  * @param {string} str 문자열
