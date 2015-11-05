@@ -1,7 +1,7 @@
 {
   "name": "hangul.js",
-  "version": "0.1.1-SNAPSHOT",
-  "description": "JavaScript Hangul Utility",
+  "version": "0.1.1",
+  "description": "Hangul JavaScript Utility",
   "main": "dist/hangul.js",
   "scripts": {
     "build": "npm install && gulp",

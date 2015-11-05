@@ -4,7 +4,7 @@
   "authors": [
     "Kiwon Seok"
   ],
-  "description": "JavaScript Hangul Utility",
+  "description": "Hangul JavaScript Utility",
   "main": "dist/hangul.js",
   "keywords": [
     "hangul"
