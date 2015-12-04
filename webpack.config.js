@@ -14,9 +14,12 @@ module.exports = {
             {
                 test: /.js$/,
                 exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader?optional=runtime'
+                loader: 'babel',
+                query: {
+                    presets: ['es2015'],
+                    plugins: ['transform-runtime']
+                }
             }
-            //{test: /\.coffee$/, loader: 'coffee-loader'}
         ]
     },
     devtool: '#inline-source-map',
