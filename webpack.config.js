@@ -1,21 +1,26 @@
+const path = require('path')
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
+const rootDir = __dirname
+const srcDir = path.resolve(rootDir, 'src')
+const distDir = path.resolve(rootDir, 'dist')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: path.resolve(srcDir, 'index.js'),
     output: {
+        path: distDir,
         filename: 'hangul.js',
-        minifyFilename: 'hangul.min.js',
-        sourceMapFilename: 'hangul.js.map',
         libraryTarget: 'umd',
         library: 'hangul'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /.js$/,
+                loader: 'babel-loader',
                 exclude: /(node_modules|bower_components)/,
-                loader: 'babel',
-                query: {
+                options: {
                     presets: ['es2015'],
                     plugins: ['transform-runtime']
                 }
@@ -25,11 +30,14 @@ module.exports = {
     devtool: '#inline-source-map',
     plugins: [
         new webpack.ProvidePlugin({
-            FINAL_CONSONANTS: __dirname + '/src/vars/finalConsonants',
-            INITIAL_CONSONANTS: __dirname + '/src/vars/initialConsonants',
-            LARGE_NUMBERS: __dirname + '/src/vars/largeNumbers',
-            NUMBERS: __dirname + '/src/vars/numbers',
-            VOWELS: __dirname + '/src/vars/vowels'
-        })
+            FINAL_CONSONANTS: path.resolve(srcDir, 'vars/finalConsonants'),
+            INITIAL_CONSONANTS: path.resolve(srcDir, 'vars/initialConsonants'),
+            LARGE_NUMBERS: path.resolve(srcDir, 'vars/largeNumbers'),
+            NUMBERS: path.resolve(srcDir, 'vars/numbers'),
+            VOWELS: path.resolve(srcDir, 'vars/vowels'),
+        }),
+        new UglifyJsPlugin({
+            sourceMap: true,
+        }),
     ]
 };
