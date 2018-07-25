@@ -1,5 +1,3 @@
-'use strict';
-
 import isHangul from './isHangul'
 import under from './under'
 
@@ -8,6 +6,6 @@ import under from './under'
  * @param {string} str 문자
  * @return {boolean} 종성의 유무
  */
-export default function(str) {
-    return isHangul(str, 1) && under(str) !== '';
+export default function (str) {
+  return isHangul(str, 1) && under(str) !== ''
 }
