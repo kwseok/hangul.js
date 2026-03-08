@@ -1,28 +1,7 @@
-.history
-.cache
-.target
-logs/
-project/target/
-project/project/
-target/
-out/
-tmp/
-
 node_modules
-bower_components
+dist
 
 .idea/
-.idea_modules/
 *.iml
 
-.classpath
-.project
-.settings
-
-.worksheet
-
-.ensime
-.ensime_session
-.ensime.sublime-workspace
-
-RUNNING_PID
+*.tsbuildinfo
